@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="x-icon" href="logo1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>AirPrishtina</title>
+</head>
+<body>
+    <body class="w3-light-grey">
+
+        <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+          <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>AirPrishtina</b></a>
+          <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+        </div>
+        
+        <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+          <img class="w3-image" src="ll.jpg" alt="London" width="1500" height="700">
+          <div class="w3-display-middle" style="width:65%">
+            <div class="w3-bar w3-black">
+              <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Fluturimet</button>
+              <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotelet</button>
+              <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rent</button>
+            </div>
+        
+            <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+              <h3>Vizitoje boten me ne</h3>
+              <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-half">
+                  <label>Prej</label>
+                  <input class="w3-input w3-border" type="text" placeholder="Departing from">
+                </div>
+                <div class="w3-half">
+                  <label>Ne</label>
+                  <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+                </div>
+              </div>
+              <p><button class="w3-button w3-dark-grey">Kerko dhe gjej datat</button></p>
+            </div>
+        
+            <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+              <h3>Gjej hotelet me te mira per ju!</h3>
+              <p>Rezervoni një hotel me ne dhe merrni çmimet dhe promovimet më të mira.</p>
+              <p>Ne i njohim hotelet - ne njohim komoditetin.</p>
+              <p><button class="w3-button w3-dark-grey">Kerko hotelet</button></p>
+            </div>
+        
+            <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+              <h3>Makinat me qira me e mirat ne bote!</h3>
+              <p><span class="w3-tag w3-deep-orange">Zbritje!</span> Ofertë speciale nëse rezervoni sot: 25% ulje kudo në botë me Prishtina rent</p>
+              <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
+              <p><button class="w3-button w3-dark-grey">Kerko vendet e lira</button></p>
+            </div>
+          </div>
+        </header>
+        <div class="w3-content" style="max-width:1100px;">
+
+            <div class="w3-container w3-margin-top">
+              <h3>Ofertat me te mira tani!</h3>
+              <h6>Mbi <strong>50%</strong> Zbrtije.</h6>
+            </div>
+            <div class="w3-row-padding w3-text-white w3-large">
+              <div class="w3-half w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img src="lll.jpg" alt="Cinque Terre" style="width:100%">
+                  <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+                </div>
+              </div>
+              <div class="w3-half">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                  <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <img src="llll.jpg" alt="New York" style="width:100%">
+                      <span class="w3-display-bottomleft w3-padding">New York</span>
+                    </div>
+                  </div>
+                  <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <img src="l.jpg" alt="San Francisco" style="width:100%">
+                      <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                  <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <img src="l9.jpg" alt="Pisa" style="width:100%">
+                      <span class="w3-display-bottomleft w3-padding">Pisa</span>
+                    </div>
+                  </div>
+                  <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <img src="o0o0.jpg" alt="Paris" style="width:100%">
+                      <span class="w3-display-bottomleft w3-padding">Paris</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+              
+              
+            
+            
+            
+            <script>
+            function openLink(evt, linkName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("myLink");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+              }
+              document.getElementById(linkName).style.display = "block";
+              evt.currentTarget.className += " w3-red";
+            }
+            
+            document.getElementsByClassName("tablink")[0].click();
+            </script>
+        
+  
+ 
+    
+   <br>
+   <div class="container ">
+    <h2 class="section-text-header">Ofertat me te reja!</h2>
+  </div>
+ 
+ 
+</div>
+</div>
+
+
+</section>
+
+<div class="new-arrived-products" id="new-arrivals">
+<div class="new-product ">
+   <div class="new-arrived-image">
+    <div class="container">
+      <div class="box">
+        <img src="images-largejpg.jpg" alt="milada-vigerova"/>
+      </div>
+    </div>
+   </div>
+   <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+
+   
+   <h1 style="text-overflow:ellipsis ;overflow: hidden;;">AirPrishtina</h2>
+   <p  class="small">24 Vende te lira</p>
+   <p  class="small">Urgup,Turqi</p>
+   <p class="price" >$40 Dita</p>
+ </div>
+</div>
+
+<div class="new-product ">
+  <div class="new-arrived-image">
+   <div class="container">
+     <div class="box">
+       <img src="3.jpg" alt="milada-vigerova"/>
+     </div>
+   </div>
+  </div>
+  <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >7 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$13.00</p>
+</div>
+  </div>
+   
+  <div class="new-product ">
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="4.jpg" alt="milada-vigerova"/>
+       </div>
+     </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >27 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$19.00</p>
+</div>
+</div>
+<div class="new-product ">
+  <div class="new-arrived-image">
+   <div class="container">
+     <div class="box">
+       <img src="5.jpg" alt="milada-vigerova"/>
+     </div>
+   </div>
+  </div>
+  <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <p class="small" >8 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$13.00</p>
+</div>
+  </div>
+  <div class="new-product ">
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="6.jpg" alt="milada-vigerova"/>
+       </div>
+     </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >29 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$30.00</p>
+</div>
+  </div>
+  <div class="new-product ">
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="7.jpg" alt="milada-vigerova"/>
+       </div>
+     </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >6 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$32.00</p>
+</div>
+  </div>
+  <div class="new-product ">
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="8.jpg" alt="milada-vigerova"/>
+       </div>
+     </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >4 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$8.00</p>
+</div>
+  </div>
+  <div class="new-product ">
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="9.jpg" alt="milada-vigerova"/>
+       </div>
+     </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >7 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$34.00</p>
+</div>
+  </div>
+  <div class="new-product ">
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="10.jpg" alt="milada-vigerova"/>
+       </div>
+     </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >24 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$17.00</p>
+</div>
+  </div>
+ <br>
+</div>
+</div>
+
+
+</section>
+
+<div class="new-arrived-products" id="new-arrivals">
+<div class="new-product ">>
+   <div class="new-arrived-image">
+    <div class="container">
+      <div class="box">
+        <img src="11.jpg" alt="milada-vigerova"/>
+      </div>
+        </div>
+   </div>
+   <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+
+   
+   <h4 style="text-overflow:ellipsis ;overflow: hidden;;">Prishtina Fashion</h4>
+   <p  class="small">24 items in store</p>
+   <p class="small" >gray | white | black</p>
+   <p class="price" >$12.00</p>
+ </div>
+</div>
+
+<div class="new-product ">>
+  <div class="new-arrived-image">
+   <div class="container">
+     <div class="box">
+       <img src="12.jpg" alt="milada-vigerova"/>
+     </div>
+       </div>
+  </div>
+  <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >9 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$14.00</p>
+</div>
+  </div>
+
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="13.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >41 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$18.00</p>
+</div>
+  </div>
+
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="14.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >5 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$31.00</p>
+</div>
+  </div>
+
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="15.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >6 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$28.00</p>
+</div>
+  </div>
+
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="16.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >9 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$11.00</p>
+</div>
+  </div>
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="21.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >13 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$21.00</p>
+</div>
+  </div>
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="18.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >3 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$12.00</p>
+</div>
+  </div>
+  <div class="new-product ">>
+    <div class="new-arrived-image">
+     <div class="container">
+       <div class="box">
+         <img src="19.jpg" alt="milada-vigerova"/>
+       </div>
+         </div>
+    </div>
+    <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+    <h4 >Prishtina Fashion</h4>
+    <p class="small" >6 items in store</p>
+    <p class="small" >Red | yellow | black</p>
+    <p  class="price" >$28.00</p>
+</div>
+  </div>
+   </div>
+   <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Merrni ofertat me te mira tani!</h2>
+      <p>Revervoni Udhetimet.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Apliko</button>
+    </div>
+  </div>
+<div class="light-gray" style="margin-top: 40px; padding: 50px 0px;" id="testimony">
+
+
+
+
+<br>
+  <div class="w3-center contact" id="contact" >
+    <div class=" w3-left-align w3-margin-top contact-info ">
+       <h3 style="font-weight: 800;" class="contact-head">GET IN TOUCH</h3> 
+       <h4 style="font-weight: 600;">Your styles at low cost
+       </h4>
+       <p>We care about our customers<br>you can contact us for any feedback</p>
+       <h4 style="font-weight: 600;">Follow Us </h4>
+       
+     <i class="fa fa-facebook-official w3-hover-opacity icons"  ></i>
+     <i class="fa fa-instagram w3-hover-opacity icons" ></i>
+     <i class="fa fa-snapchat w3-hover-opacity icons"></i>
+     <i class="fa fa-pinterest-p w3-hover-opacity icons" ></i>
+     <i class="fa fa-twitter w3-hover-opacity icons"></i>
+     <i class="fa fa-linkedin w3-hover-opacity icons"></i>
+    </div>
+    <div class="w3-left-align w3-margin-top contact-info" >
+          <h3 style="font-weight: 600;">OPENING HOURS</h3>
+             <p>Mon - Sat 7am - 9pm:</p>
+             <p>Opening on Morning | Off at afternoon</p>
+             <p>Delivery only on opening hours</p>
+             <br>
+             <div class="w3-margin-to  w3-left-align" >
+              <h4 style="font-weight: 600;">CONTACT INFO</h4>
+              <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 20px;"></i> 049-000-000</p>
+              <p><i class="fa fa-phone" style="margin-right: 8px;font-size: 20px;"></i> 043-000-000</p>
+              <label><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i></label>
+             <input placeholder="Email" class="w3-margin-top" type="email"/>
+             <br>
+             <br>
+             <button class="w3-button w3-red w3-round " style="margin-left: 30px;">Subscribe</button>
+   
+           </div>    
+                 
+    </div>
+   
+   
+
+ 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</body>
+</html>
